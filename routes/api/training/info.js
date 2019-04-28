@@ -10,6 +10,8 @@ const crypto = require('crypto-promise')
 const responseMessage = require('../../../modules/utils/responseMessage')
 const secret = require('../../../modules/utils/secret')
 
+const csvFilePath = './public/csv/my_info.csv'
+
 /* GET home page. */
 router.get('/', (req, res) => {
     //localhost:3000/training/info/?name="김현진"&age=23
@@ -43,8 +45,6 @@ router.get('/', (req, res) => {
         res.end()
     })
 })
-
-const csvFilePath = './public/csv/my_info.csv'
 
 //localhost:3000/training/info
 //body = {

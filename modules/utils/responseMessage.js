@@ -11,4 +11,11 @@ module.exports = {
     MISS_MATCH_PW: "비밀번호가 맞지 않습니다.",
     LOGIN_SUCCESS: "로그인 성공",
     LOGIN_FAIL: "로그인 실패",
+    
+    ALREADY_BOARD: "이미 존재하는 게시글입니다",
+    CREATED_BOARD: "게시글 작성 성공",
+    UPDATED_BOARD: "게시글 수정 성공",
+    REMOVED_BOARD: "게시글 삭제 성공",
+    REMOVED_BOARD_FAIL: "게시글 삭제 실패",
+    NO_BOARD: "존재하지 않는 게시글입니다.",
 }

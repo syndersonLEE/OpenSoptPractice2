@@ -1,8 +1,7 @@
-var express = require('express');
-var router = express.Router();
+var express = require('express')
+var router = express.Router()
+var boardRouter = require('./board')
 
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
-});
+router.use('/board', boardRouter)
 
-module.exports = router;
+module.exports = router
