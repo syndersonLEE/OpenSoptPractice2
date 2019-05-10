@@ -18,4 +18,10 @@ module.exports = {
     REMOVED_BOARD: "게시글 삭제 성공",
     REMOVED_BOARD_FAIL: "게시글 삭제 실패",
     NO_BOARD: "존재하지 않는 게시글입니다.",
+
+
+    FAIL_ENCRYPTION: "암호화에 실패했습니다.",
+
+    FAIL_CSV_READ: "csv 읽기 실패",
+    FAIL_CSV_WRITE: "csv 쓰기 실패",
 }
