@@ -33,7 +33,13 @@ router.get('/:id', (req, res) => {
             res.status(200).send(UTILS.successFalse(CODE.NOT_FOUND, responseMessage.NO_BOARD))
             return
         }
-        res.status(200).send(UTILS.successTrue(CODE.OK, jsonData))
+        const returnData = {
+            id: jsonData.id,
+            title: jsonData.title,
+            content: jsonData.content,
+            write_time: jsonData.date.split("T")[0]
+        }
+        res.status(200).send(UTILS.successTrue(CODE.OK, returnData))
     })
 })
 
